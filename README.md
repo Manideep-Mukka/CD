@@ -1,5 +1,4 @@
 # 23115058_CD
-# Compiler Project - README
 
 This project implements a basic parser and lexer using **Flex** (lex) and **Bison** (yacc). It consists of the following components:
 
@@ -71,6 +70,30 @@ Replace `input_file` with your source file to be parsed.
 
 ---
 
+
+---
+
+## Example
+
+### Input
+You can test the parser with a simple arithmetic expression like:
+
+```
+x*y*z-2
+```
+
+Save this expression into a file, for example `input.txt`.
+
+### Run Command
+```bash
+./parser < input.txt
+```
+
+### Expected Output
+The parser will process the expression according to the grammar rules defined in `parser.y` and lexical rules in `lexer.l`. 
+The actual output depends on how actions are defined in your parser (e.g., print statements, computation, or syntax validation).
+
+---
 ## Notes
 - Make sure all files (`parser.y`, `lexer.l`, etc.) are in the same directory before starting.
 - This setup assumes a Unix-like environment.
